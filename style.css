@@ -83,6 +83,7 @@ header {
     align-items: center;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    width: 100%;
 }
 
 .brand {
@@ -94,9 +95,12 @@ header {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
+    padding: 0;
 }
 
-.nav-item {}
+.nav-item {
+    /*  */
+}
 
 .nav-link {
     text-decoration: none;
@@ -439,7 +443,9 @@ footer li {
     font-weight: lighter;
 }
 
-.level-3-heading-white {}
+.level-3-heading-white {
+    color: var(--white);
+}
 
 .gray-text {
     color: var(--gray);
@@ -480,6 +486,19 @@ footer li {
 /*    MIN WIDTH 768px    */
 
 @media only screen and (min-width:768px) {
+    .nav-bar {
+        justify-content: space-between;
+    }
+
+    .brand {
+        display: block;
+        margin-left: 2rem;
+    }
+
+    .nav-menu {
+        margin-right: 2rem;
+    }
+
     .btn {
         width: 30%;
     }
@@ -489,74 +508,64 @@ footer li {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
+
     .blog-post {
         margin-top: -20rem;
         padding-top: 20rem;
     }
+
     .blog-cards-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
+
     .customers-cards-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
     }
+
     .top-destinations-cards-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
     }
+
     .footer-col {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         gap: 0rem;
     }
+
     footer li {
         font-size: .9rem;
     }
 }
+
 /* ------------------------------------- */
 /*    MIN WIDTH 1024px    */
 
 @media only screen and (min-width:1024px) {
-    .btn {
-        width: 30%;
+    .experience-cards-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 
-    .experience-cards-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-    }
     .blog-post {
         margin-top: -20rem;
         padding-top: 20rem;
     }
+
     .blog-cards-container {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
     }
+
     .customers-cards-container {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
     }
+
     .top-destinations-cards-container {
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-    }
-    .footer-col {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-        gap: 0rem;
-    }
-    footer li {
-        font-size: .9rem;
     }
 }
