@@ -723,7 +723,8 @@ footer li {
     margin: auto;
     padding: 1rem;
 }
-.contact-right p{
+
+.contact-right p {
     color: var(--cyan);
 }
 
@@ -740,6 +741,7 @@ footer li {
     font-family: mukta-mahi-extra-light;
     font-size: 1.3rem;
 }
+
 .btn-form:hover {
     color: white;
     background-color: var(--blue);
@@ -779,6 +781,7 @@ footer li {
         width: 40%;
         /* background-color: var(--yellow); */
     }
+
     .btn-form {
         width: 30%;
         margin-left: 0;
